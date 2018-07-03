@@ -14,6 +14,11 @@ ca = ControleArquivo();
 
 ca.criarDirResultados();
 
+if ca.verificarPrograma("ncbi-entrez-direct") == False:
+    print("You must install ncbi-entrez-direct");
+    print("Try: sudo apt install ncbi-entrez-direct");
+    exit();
+
 try:
     filePath = sys.argv[1];
     fileReader = FileReader();
@@ -68,12 +73,4 @@ if (filesString != None):
     #ca.concatenarMitocondria(dirMitocondria,"gene");
     ca.concatenarMitocondria(dirMitocondria,"D-loop");
 
-    print("Results in ~/MPResults/"+dirName+"/FinalAlignment");
-
-    
-
-
-
-
-
-		
+    print("Results in ~/MPResults/"+dirName+"/FinalAlignment");	

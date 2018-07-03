@@ -1,0 +1,24 @@
+This is a scientific program that helps to separate DNA data from a file with mitochondrial gens
+
+To start that application, there is two ways
+        1)By the interface:
+            python3 MPCreator.py 
+        2)By an '.txt' file:
+            python3 MPCreator.py IDList.txt
+
+            When using this method to input the IDs, you must separate the IDs by lines.s
+            EX: 
+            -------------------
+            |    IDList.txt    |
+            |                  |
+            |    ID12324       |
+            |    ID23123       |
+            |    ID12312       | 
+            -------------------
+
+Dependencies:
+    E-Direct : API from NCBI.
+    Muscle.
+    Mafft.
+    T_Coffee.
+    ClustalW.

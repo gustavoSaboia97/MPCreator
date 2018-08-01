@@ -4,11 +4,15 @@
 # AUTOR              : Gustavo Saboia
 # DATA               : 29/04/2018
 #-------------------------------------------------------------------------------------
+import sys;
+sys.path.append('./Classes/')
+sys.path.append('./Alignment/')
+
 from ControleArquivo import ControleArquivo;
 from DMitocondria import DMitocondria;
 from Alinhamento import Alinhamento;
 from FileReader import FileReader;
-import sys;
+
 
 ca = ControleArquivo();
 

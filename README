@@ -1,4 +1,11 @@
-This is a scientific program that helps to separate DNA data from a file with mitochondrial gens
+MPCreator is a scientific workflow to control and automate the treatment of genomic metadata for phylogenomics analyses. 
+
+MPCreator is available at:
+        https://github.com/gustavoSaboia97/MPCreator
+The command to pull the docker image is:
+        docker pull saboia97/mpcreator 
+
+MPCreator accepts as input an ID group, obtains the NCBI GenBank files (by the header) cleansing, filtering, and clustering metadate as localization, organism, gene, etc.Then, it organizes the sequences generating structured and organized files "by features" that can be used as input by phylogenetic programs such as RAxML/ExaML, PhyML, IQ-TREE, and BEAST.
 
 To start that application, there is two ways
         1)By the interface:
@@ -23,4 +30,4 @@ Dependencies:
     T_Coffee.
     ClustalW.
 
-    Teste
+    

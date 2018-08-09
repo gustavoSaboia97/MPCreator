@@ -7,16 +7,14 @@ The command to pull the docker image is:
 
 MPCreator accepts as input an ID group, obtains the NCBI GenBank files (by the header) cleansing, filtering, and clustering metadata as localization, organism, gene, etc.Then, it organizes the sequences generating structured and organized files "by features" that can be used as input by phylogenetic programs such as RAxML/ExaML, PhyML, IQ-TREE, and BEAST.
 
-<p align="center">
-  <img width="460" height="300" src="https://www.dropbox.com/preview/%40artigos/2018/bsb%40gsaboia/Workflow1.0/BSB2018/Figura1-v2%20-%20English.png?role=work">
-</p>
-
-
 To start that application, there is two ways
-        1)By the interface:
+        1) Iterative with User by running:
             python3 MPCreator.py 
-        2)By an '.txt' file:
+            (MCCreator requests  ID, output directory and the multiple sequence alignment)
+
+        2) Automatic by running:
             python3 MPCreator.py IDList.txt
+            (IDList.txt is the file containing IDs)
 
             When using this method to input the IDs, you must separate the IDs by lines.s
             EX: 
@@ -29,7 +27,7 @@ To start that application, there is two ways
             -------------------
 
 Dependencies:
-    E-Direct : API from NCBI.
+    E-Direct (NCBI API)
     Muscle
     Mafft
     T_Coffee

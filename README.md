@@ -1,9 +1,12 @@
+# MPCreator
 MPCreator is a scientific workflow to control and automate the treatment of genomic metadata for phylogenomics analyses. 
-
-MPCreator is available at:
-        https://github.com/gustavoSaboia97/MPCreator
-The command to pull the docker image is:
-        docker pull saboia97/mpcreator 
+##Location
+MPCreator is available at: https://github.com/gustavoSaboia97/MPCreator .
+##Docker Official Container
+The command to pull the docker image is: 
+'''
+docker pull saboia97/mpcreator 
+'''
 
 MPCreator accepts as input an ID group, obtains the NCBI GenBank files (by the header) cleansing, filtering, and clustering metadata as localization, organism, gene, etc.Then, it organizes the sequences generating structured and organized files "by features" that can be used as input by phylogenetic programs such as RAxML/ExaML, PhyML, IQ-TREE, and BEAST.
 

@@ -21,7 +21,10 @@ To start that application, there is two ways
     python3 MPCreator.py IDList.txt
     (IDList.txt is the file containing IDs)
     When using this method to input the IDs, you must separate the IDs by lines.
+    
 ```
+### ID File Exemple
+![alt text](img/IDFile-Exemple.png)
     
 
 ## Dependencies

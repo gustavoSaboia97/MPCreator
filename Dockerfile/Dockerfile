@@ -9,14 +9,9 @@ RUN set -x \
         nano git \
 #Dependecies
         python3 mafft muscle t-coffee clustalw ncbi-entrez-direct
-    
-#Preparing to get the MPCreator
-CMD set -x \
-    && apt-get install wget zip unzip -y \
-    && wget https://github.com/gustavoSaboia97/MPCreator/archive/master.zip \
-    && unzip master.zip \
-    && mv /MPCreator-master /root/MPCreator \
-    && rm /master.zip
+
+RUN set -x \
+    && git clone https://github.com/gustavoSaboia97/MPCreator.git /root/MPCreator
 
 #Getting inside the directory of MPcreator
 WORKDIR /root/MPCreator

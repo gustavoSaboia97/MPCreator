@@ -1,8 +1,8 @@
 # MPCreator
 MPCreator is a scientific workflow to control and automate the treatment of genomic metadata for phylogenomics analyses. 
-##Location
+## Location
 MPCreator is available at: https://github.com/gustavoSaboia97/MPCreator .
-##Docker Official Container
+## Docker Official Container
 The command to pull the docker image is: 
 '''
 docker pull saboia97/mpcreator 

@@ -29,12 +29,12 @@ To start that application, there is two ways
             |    ID12312       | 
             -------------------
 
-Dependencies:
-    E-Direct (NCBI API)
-    Muscle
-    Mafft
-    T_Coffee
-    ClustalW
+## Dependencies:
+* E-Direct (NCBI API)
+* Muscle
+* Mafft
+* T_Coffee
+* ClustalW
 
 
     

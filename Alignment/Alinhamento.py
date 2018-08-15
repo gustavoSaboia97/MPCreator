@@ -44,7 +44,7 @@ class Alinhamento:
 				n_programas+=1;
 			else:
 				print("3 --> ClustalW :: NOT DETECTED");
-			if controleArquivo.verificarPrograma("tcofee"):
+			if controleArquivo.verificarPrograma("t-coffee"):
 				print("4 --> T_Coffee");
 				lista_programas.append(4);
 				n_programas+=1;			

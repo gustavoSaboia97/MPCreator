@@ -7,32 +7,22 @@ The command to pull the docker image is:
 ```
    # docker pull saboia97/mpcreator 
 ```
-## What MPCreator does?
-MPCreator accepts as input an ID group, obtains the NCBI GenBank files (by the header) cleansing, filtering, and clustering metadata as localization, organism, gene, etc.Then, it organizes the sequences generating structured and organized files "by features" that can be used as input by phylogenetic programs such as RAxML/ExaML, PhyML, IQ-TREE, and BEAST.
 
-To start that application, there is two ways
-* Iterative with User by running:
+Starting with an ID file:
 ```
-    $ python3 MPCreator.py 
-
-    (MCCreator requests  ID, output directory and the multiple sequence alignment)
+    $ python3 MPCreator.py -f ID_FILE_PATH -o OUTPUT_DIR_NAME -a ALIGNMENT_ID_NUMBER
 ```
-* Automatic by running:
+Starting with a directory:
 ```
-    $ python3 MPCreator.py IDList.txt
-
-    (IDList.txt is the file containing IDs)
-    When using this method to input the IDs, you must separate the IDs by lines.
+    $ python3 MPCreator.py -d DIR_PATH -o OUTPUT_DIR_NAME -a ALIGNMENT_ID_NUMBER
 ```
+Parameters:
+```
+    -f or -d: You must choose between them, because '-f' starts the aplication reading a file with NCBI Mitochondrial IDs and '-d' starts the aplication reading a directory with Mitochondrial genbanks files
 
-### ID File Exemple
-![alt text](img/IDFile-Exemple.png)
-    
-
-## Dependencies
-* Python 3.X
-* E-Direct (NCBI API)
-* Muscle
-* Mafft
-* T_Coffee
-* ClustalW
+    -o : set the output diretory name at MPResults
+    -a : set the alignment program.
+         1 --> Mafft
+         2 --> Muscle
+         3 --> T_Coffee
+```

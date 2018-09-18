@@ -12,7 +12,7 @@ This repository contains a dockerfile with the dependecies inside the folder Doc
 ```
 
 ## Aplication Details
-If you don't want to run that applucation inside a Docker container, you should know the dependencies before running the application.
+If you don't want to run that application inside a Docker container, you should know the dependencies before running the application.
 
 ### Dependencies
 
@@ -42,7 +42,9 @@ If you already have a directory with the Mitochondrial Genbank files, you must u
 ```
 #### Parameters:
 ```
-    -f or -d: You must choose between them, because '-f' starts the aplication reading a file with NCBI Mitochondrial IDs and '-d' starts the aplication reading a directory with Mitochondrial genbanks files
+    -f or -d: You must choose between them, because '-f' starts the aplication reading a file with 
+	      NCBI Mitochondrial IDs and '-d' starts the aplication reading a directory with Mitochondrial 
+  	      genbanks files.
 
     -o : set the output diretory name at MPResults
     -a : set the alignment program by the ID.

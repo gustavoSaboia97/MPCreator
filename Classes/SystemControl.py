@@ -34,8 +34,9 @@ class SystemControl:
         try:
             os.mkdir(path+"/GenbankFiles")
         except FileExistsError:
-            self.errors.user_result_folder_exists(path)
-
+            # self.errors.user_result_folder_exists(path)
+            pass
+           
     def generate_results_folder(self,path):
         try:
             os.mkdir(path)
@@ -43,5 +44,7 @@ class SystemControl:
             os.mkdir(path+"/Alignment")
             os.mkdir(path+"/FinalAlignment")
         except FileExistsError:
-            self.errors.user_result_folder_exists(path)
+            # self.errors.user_result_folder_exists(path)
+            pass
+            
 ###########################################################

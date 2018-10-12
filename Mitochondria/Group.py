@@ -18,12 +18,14 @@ class Group:
     #Get the numbers of the indexes
     def indexes_translation(self,indexes_without_translate):
         indexes = []
+
+        indexes_without_translate = indexes_without_translate.replace(">","")
+        indexes_without_translate = indexes_without_translate.replace("<","")
+
         #For join cases
         if indexes_without_translate.count("join") > 0:
             
             indexes_string = indexes_without_translate.replace("join","")
-            indexes_string = indexes_string.replace(">","")
-            indexes_string = indexes_string.replace("<","")
             indexes_string = indexes_string.replace("(","")
             indexes_string = indexes_string.replace(")","")
             indexes_string_vector = indexes_string.split(",")
@@ -35,8 +37,6 @@ class Group:
         #For complement cases
         elif indexes_without_translate.count("complement") > 0:
             indexes_string = indexes_without_translate.replace("complement","")
-            indexes_string = indexes_string.replace(">","")
-            indexes_string = indexes_string.replace("<","")
             indexes_string = indexes_string.replace("(","")
             indexes_string = indexes_string.replace(")","")
             
@@ -46,8 +46,6 @@ class Group:
         #For normal cases
         else:
             simple_indexes = indexes_without_translate.split("..")
-            indexes_string = indexes_string.replace(">","")
-            indexes_string = indexes_string.replace("<","")
             indexes.append(int(simple_indexes[0]))
             indexes.append(int(simple_indexes[1]))
         return indexes
